@@ -1,4 +1,4 @@
-# Allegro Hand V6 UI
+# Allegro Hand V6 F UI
 
 This repository contains ROS 2 UI packages for monitoring Allegro Hand V6 status, controlling poses, and plotting real-time data.
 
