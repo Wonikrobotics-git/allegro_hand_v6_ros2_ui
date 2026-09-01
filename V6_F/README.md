@@ -2,7 +2,7 @@
 
 This repository contains ROS 2 UI packages for monitoring Allegro Hand V6 status, controlling poses, and plotting real-time data.
 
-It is released separately from the V6 core and `allegro_hand_common` repositories. The UI packages do not link directly against the V6 hardware library. They communicate with a separately running V6 bringup process through ROS 2 topics, TF, and controller interfaces.
+It is released separately from the V6 core and `allegro_hand_common` repositories[allegro_hand_ros2](https://github.com/Wonikrobotics-git/allegro_hand_ros2). The UI packages do not link directly against the V6 hardware library. They communicate with a separately running V6 bringup process through ROS 2 topics, TF, and controller interfaces.
 
 ## Package Structure
 
