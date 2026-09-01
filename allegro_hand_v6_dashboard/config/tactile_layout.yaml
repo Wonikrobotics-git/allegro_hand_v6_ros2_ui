@@ -1,0 +1,35 @@
+# Tactile wire order: thumb, index, middle, ring, pinky, palm.
+# Each finger is tip, middle, base. Palm input order is bottom, middle(center), upper(left).
+unit: hPa
+pressure_min: 1000.0
+pressure_max: 1200.0
+svg_width: 1254
+svg_height: 1254
+# Source-image crop: x, y, width, height. The crop removes the transparent
+# left margin so the visible hand is centered while retaining its full height.
+image_crop: [198, 0, 1056, 1254]
+
+sensors:
+  - {index: 0,  name: thumb_tip,   label: TT, group: Thumb,  frame_id: R14_Link, position: [0.0125, -0.0217, 0.001], normal: [0, 0, 1], svg: [1147, 688], text_rotation: 59}
+  - {index: 1,  name: thumb_mid,   label: T2, group: Thumb,  frame_id: R13_Link, position: [0.0069, -0.0119, 0.0109], normal: [0, 0.0375, 0.9993], svg: [1059, 744], text_rotation: 59}
+  - {index: 2,  name: thumb_base,  label: T1, group: Thumb,  frame_id: R12_Link, position: [0.0089, -0.0154, 0.0110], normal: [0, 0.0375, 0.9993], svg: [934, 824], text_rotation: 59}
+
+  - {index: 3,  name: index_tip,   label: IT, group: Index,  frame_id: R24_Link, position: [0.022, 0, 0.006], normal: [0, 0, 1], svg: [706, 208]}
+  - {index: 4,  name: index_mid,   label: I2, group: Index,  frame_id: R22_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [702, 397]}
+  - {index: 5,  name: index_base,  label: I1, group: Index,  frame_id: R21_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [701, 554]}
+
+  - {index: 6,  name: middle_tip,  label: MT, group: Middle, frame_id: R34_Link, position: [0.022, 0, 0.006], normal: [0, 0, 1], svg: [573, 155]}
+  - {index: 7,  name: middle_mid,  label: M2, group: Middle, frame_id: R32_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [569, 344]}
+  - {index: 8,  name: middle_base, label: M1, group: Middle, frame_id: R31_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [569, 501]}
+
+  - {index: 9,  name: ring_tip,    label: RT, group: Ring,   frame_id: R44_Link, position: [0.022, 0, 0.006], normal: [0, 0, 1], svg: [446, 208]}
+  - {index: 10, name: ring_mid,    label: R2, group: Ring,   frame_id: R42_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [442, 397]}
+  - {index: 11, name: ring_base,   label: R1, group: Ring,   frame_id: R41_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [441, 554]}
+
+  - {index: 12, name: pinky_tip,   label: KT, group: Pinky,  frame_id: R54_Link, position: [0.022, 0, 0.006], normal: [0, 0, 1], svg: [313, 271]}
+  - {index: 13, name: pinky_mid,   label: K2, group: Pinky,  frame_id: R52_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [311, 465]}
+  - {index: 14, name: pinky_base,  label: K1, group: Pinky,  frame_id: R51_Link, position: [0.019, 0, 0.008], normal: [0, 0, 1], svg: [311, 623]}
+
+  - {index: 17, name: palm_left,   label: P1, group: Palm,   frame_id: base_link, position: [0.055,  0.018, 0.018], normal: [0, 0, 1], svg: [428, 897]}
+  - {index: 16, name: palm_center, label: P2, group: Palm,   frame_id: base_link, position: [0.070, -0.010, 0.018], normal: [0, 0, 1], svg: [600, 831]}
+  - {index: 15, name: palm_bottom, label: P3, group: Palm,   frame_id: base_link, position: [0.025,  0.010, 0.018], normal: [0, 0, 1], svg: [457, 1038]}

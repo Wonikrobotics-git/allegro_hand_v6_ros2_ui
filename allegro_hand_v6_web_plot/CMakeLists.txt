@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.8)
+project(allegro_hand_v6_web_plot)
+find_package(ament_cmake REQUIRED)
+install(PROGRAMS scripts/web_plot_bridge.py DESTINATION lib/${PROJECT_NAME} RENAME web_plot_bridge)
+install(DIRECTORY web DESTINATION share/${PROJECT_NAME})
+install(FILES
+  ${CMAKE_CURRENT_SOURCE_DIR}/web/WR_EN_high.png
+  DESTINATION share/${PROJECT_NAME}/web
+)
+install(FILES README.md README_KR.md DESTINATION share/${PROJECT_NAME})
+ament_package()
